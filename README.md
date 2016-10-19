@@ -1,31 +1,78 @@
-# JsTd3
+# TD3
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.17.
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## 1
 
-## Code scaffolding
+Générer trois composants 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
+- container
+- list-item
+- detail-item
 
-## Build
+tips : ng generate component ????
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
+## 2
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+inclure le container dans l'app.component.html
 
-## Running end-to-end tests
+dans le container créer:
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/). 
-Before running the tests make sure you are serving the app via `ng serve`.
+++++++++++++++++++++++++++++++
+|         panel              |
+++++++++++++++++++++++++++++++
+|  list-item  | detail-item  | 
+++++++++++++++++++++++++++++++
 
-## Deploying to Github Pages
+dans list-item et detail-item créer un panel
 
-Run `ng github-pages:deploy` to deploy to Github Pages.
 
-## Further help
+## 3
 
-To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+dans list-item dans l'init initialiser un variable contentant un tableau d'objet
+avec pour attribut nom, prenom, date de naissance, diplome (un tableau de chaine de caractere)
+avec trois objects construit.
+
+dans le template, parcourir le tableau pour faire une liste de lien ayant le nom et prenom comme text
+
+
+## 4 
+
+créer une fonction selectionner(personne){
+}
+et la lier à un clic sur un des liens
+
+## 5
+
+créer un Output personneSelected
+
+et modifier la fonction selectionner pour emettre la personne selectionner
+
+
+
+## 6
+dans container
+
+créer un Input personnes et l'utiliser à la place du tableau dans le template
+ 
+et modifier le container pour initialiser dans l'init le tableau et le transmettre
+à list-item 
+
+## 7
+
+créer  une fonction personneSelected(personne) et l'appeller via list-item
+
+## 8
+Afficher le nom de la personne dans le panel container grace à personneSelected
+
+## 9
+créer un input personne dans detail-item
+
+## 10 
+lier la personne de container via l'input dans detail-item
+
+## 11
+afficher les details de la personne (une liste pour les diplomes)
+
+
+Bon courage
