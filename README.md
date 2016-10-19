@@ -18,11 +18,11 @@ inclure le container dans l'app.component.html
 
 dans le container créer:
 
-++++++++++++++++++++++++++++++
-|         panel              |
-++++++++++++++++++++++++++++++
-|  list-item  | detail-item  | 
-++++++++++++++++++++++++++++++
+
+| panel          | panel         
+| :------------- | :-------------  
+| list-item      | detail-item  
+      
 
 dans list-item et detail-item créer un panel
 
