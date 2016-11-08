@@ -1,3 +1,9 @@
 <h1>
   {{title}}
 </h1>
+{{ isClicked }}
+<app-button [text]="'Mon super bouton'" [type]="type" (mon_click)="mon_bouton_est_clique($event)"></app-button>
+{{ text }}
+<button (click)="changeType()">click </button>
+
+<button type="button" class="btn btn-primary">button</button>

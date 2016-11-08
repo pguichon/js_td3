@@ -1,0 +1,13 @@
+{
+  "globalDependencies": {
+    "bootstrap": "registry:dt/bootstrap#3.3.5+20160619023404",
+    "core-js": "registry:dt/core-js#0.0.0+20160914114559",
+    "jquery": "registry:dt/jquery#1.10.0+20160929162922",
+    "zone.js": "registry:dt/zone.js#0.0.0+20160316155526"
+  },
+  "globalDevDependencies": {
+    "karma": "registry:dt/karma#0.13.9+20160811111312",
+    "karma-jasmine": "registry:dt/karma-jasmine#0.0.0+20160316155526",
+    "typescript": "registry:dt/typescript#0.4.0+20160317120654"
+  }
+}
